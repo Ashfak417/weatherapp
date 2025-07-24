@@ -48,7 +48,7 @@ function App() {
 
       if (geoData.length === 0) {
         alert(
-          `Location "${city}" not found. Please try a different city or country name.`
+          `Location "💔${city}❌" 🤔not found.😒😡Hey Enter correct city or country name🌍🥰.`
         );
         setCity("Colombo"); // Reset city to a known good default
         return;
@@ -132,9 +132,7 @@ function App() {
           <>
             <h1 className="container_date">{formetedDate}</h1>
             <div className="weather_data">
-              <h2 className="container_city">
-                {displayedCityName}
-              </h2>
+              <h2 className="container_city">{displayedCityName}</h2>
               <img
                 className="container_img"
                 src={getweatherIcloudUrl(weatherData.weather[0].main)}
